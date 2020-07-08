@@ -1,0 +1,205 @@
+<!-- Jc-->
+
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Timeline</title>
+    <script>console.log= function(){};</script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="icon/css/material-design-iconic-font.min.css">
+<script src="jquery.js"></script>
+  
+  <link rel="stylesheet" href="css.css">
+       <script src='js.js'></script>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="font-awesome.min.css">
+            <link rel="stylesheet" href="font-awesome.css">
+            <link rel="stylesheet" href="cssa.css">
+
+
+            <!--<link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>-->
+
+
+        <style type="text/css">
+          .left_float {
+    margin-left: 0;
+              }
+        </style>  
+      
+</head>
+<body class="">
+<div class="chat">
+     <div class="chat-container">
+            <div id="call" class="user-bar">
+                <div class="back">
+                <i class="zmdi zmdi-arrow-left" onclick="dirt();"></i>
+              </div>
+              <div class="avatar">
+                
+              <!--<img src="p.jpg" alt="Avatar" onclick="alert('Will Available Soon');">-->
+              <img id="pics" src="images/dp.png" alt="Avatar" onclick="pics();">
+              </div>
+              <div class="name" id=''>
+                <script type="text/javascript">var n="Unknown"</script>
+                <span id="person">
+                  <script type="text/javascript">document.write(n);</script>
+                </span>
+                <span class="Status"> </span>
+              </div>
+
+
+              <!--<div class="actions more">
+                <span class="dropdown">
+                <i class="zmdi zmdi-more-vert"></i>
+                <div class="dropdown-content">
+                 <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  <input type="text" plceholder="write something">
+                  <button type="submit" onclick="alert('clicked');">click me</button>
+                </div>
+              
+                </span>
+
+              </div>-->
+
+               <div class="actions more">
+                <i class="zmdi zmdi-more-vert" onclick="take();"></i>
+              </div> 
+
+
+
+              <div  class="actions" >
+                <i class="zmdi zmdi-phone" id="bg_img "onclick="bgk_chng();"></i>
+              </div>
+              <div class="actions kaman">
+                <!--<i class="zmdi zmdi-attachment-alt"></i>-->
+                <i class="zmdi zmdi-videocam" onclick="name();"></i>
+             </div>
+
+            </div>
+
+            <div class="conversation">
+              <div class="conversation-container">
+            <script type="text/javascript">    
+              var p2="I am good ! you";
+              var time1="10:44 AM";
+              var time2="10:55 AM";
+              var p1="Hi name how are you buddy";
+            </script>
+
+            <span id="ap">
+              <!--<div class='message received'>
+                <script >document.write(p1)</script>
+                <span class='metadata'> 
+                  <span class='time'>
+                   <script >document.write(time1)</script></span>
+                </span>
+              </div>
+
+              <div class='message sent'>
+                <script >document.write(p2)</script>
+                <span class='metadata'>
+                  <span class='time'>
+                    <script >document.write(time2)</script>
+                  </span>
+                  <span class='tick'>"+tick+"</span>
+                </span>
+              </div>-->
+              <div>
+                
+              </div>
+            </span>
+
+           </div>
+        
+
+              <form id="form" class="conversation-compose">
+                <div class="emoji">
+                  
+                </div>
+                <input id="val" class="input-msg" name="input" placeholder="Type a message" autocomplete="off" autofocus></input>
+                 <div class="photoo">
+                   <i class="zmdi zmdi-attachment-alt" onclick="dirt();"></i>
+                </div>
+                <div class="photo">
+                  <i class="zmdi zmdi-camera"></i>
+
+                </div>
+              
+              <span id=""></span>
+                <span class="send">
+                    <div class="mic">
+                      
+                     <i id="msend" class="zmdi zmdi-mic"></i>
+                     
+                    </div>
+                  </span>
+              </form>
+
+<input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
+      <p style=""><label for="file" style="cursor: pointer;"><i class="zmdi zmdi-camera" style="padding: 5px;">Set Profile</i>
+      </label></p>
+
+      <script>
+      var loadFile = function(event) {
+        var image = document.getElementById('pics');
+        
+        image.src = URL.createObjectURL(event.target.files[0]);
+      };
+      </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<script>
+  function take(){
+  var x = prompt("Type a message :", "");
+  if (x!=null) {
+  smsg=x;
+  para = $("<div class='message received'>"+smsg+"<span class='metadata'> <span class='time'>"+time+"</span></span></div>");
+  setTimeout(function() { $('#ap').append(para);$(".status").html("online");
+  $(".conversation-container").scrollTop(scroll);
+  },1100);
+  console.log= function(){};
+  }
+}
+  
+function name(){
+  var n = prompt("Set Name :", "");
+  if(n!=null){
+  document.getElementById("person").innerHTML = n;
+    }
+  }
+  function pics(){
+
+var pics = prompt("Go to bottom or Set Profile Picutre :", "");
+if(pics!=null){
+document.getElementById("pics").src ="images/"+pics; 
+            } 
+}
+            
+
+            function bgk_chng(){
+              var bgimg = prompt("Set Background :", "");
+              if(bgimg!=null){
+              bgimg="bg/"+bgimg;
+                  $(".conversation-container").css("background-image", "url(" + bgimg + ")");
+            }}
+            function dirt(){
+              window.location.href="about.html";
+            }
+
+
+</script>
