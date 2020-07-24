@@ -1,4 +1,14 @@
 /*Jc*/
+.image-upload > input
+{
+    display: none;
+}
+
+.image-upload img
+{
+    width: 80px;
+    cursor: pointer;
+}
 html {
   box-sizing: border-box;
   height: 100%;
@@ -21,7 +31,7 @@ body {
   height: calc(100% - 69px);
 }
 
-.chat-container {
+.chat-page {
   height: 100%;
 }
 
@@ -50,7 +60,7 @@ body {
 
 .user-bar .actions {
   float: right;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 28px;
 }
 
 .user-bar .actions.more {
@@ -58,11 +68,8 @@ body {
 }
 
 .user-bar .actions.kaman {
-  flex: 0 0 auto;
-  border-radius: 0 0 5px 0;
-  text-align: center;
-  position: relative;
-  width: 48px;
+  margin: 0 0 auto;
+  
 }
 
 
@@ -112,6 +119,8 @@ body {
 }
 
 .user-bar .avatar img {
+  width: 50%;
+  height: 100%;
   border-radius: 50%;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
   display: block;width: 100%;
@@ -158,7 +167,7 @@ body {
   background: #b3ada7;
 }
 
-.conversation .conversation-container {
+.conversation .conversation-page {
   height: calc(100% - 68px);
   box-shadow: inset 0 10px 10px -10px #000000;
   overflow-x: hidden;
@@ -166,7 +175,7 @@ body {
   margin-bottom: 5px;
 }
 
-.conversation .conversation-container:after {
+.conversation .conversation-page:after {
   content: "";
   display: table;
   clear: both;
@@ -396,7 +405,7 @@ cursor: pointer;
     display: none;
   }
 
-  .screen-container {
+  .screen-page {
     position: absolute;
     top: 0;
     left: 0;
@@ -407,7 +416,7 @@ cursor: pointer;
   .conversation {
     height: calc(100vh - 55px);
   }
-  .conversation .conversation-container {
+  .conversation .conversation-page {
     height: calc(100vh - 120px);
     background-image: url("bg/db.png");
     background-size: cover;
