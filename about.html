@@ -20,10 +20,13 @@
       <div class="row">
         <div class="col-xl-9 offset-xl-1">
           <div class="section-title">
+
+
           </div>
               <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-                <a href="index.html" style="text-decoration: none; text-decoration-color: none; color: black; opacity: 0.5;"><h2 class="w3-mideum">The Empty Light</h2></a>
-                <p class="w3-opacity"><i>Dev - Experiya [EV_1.01]</i> <b>@jc</b></p>
+                <a href="index.html" style="text-decoration: none; text-decoration-color: none; color: black; opacity: 0.5;">
+                <h2 class="w3-mideum">The Empty Light</h2>
+                <p class="w3-opacity"><i>Dev - Experiya [EV_1.01]</i> <b>@jc</b></p></a>
           </div>
 
 
@@ -33,35 +36,42 @@
                     <div class="col-xl-9 offset-xl-1">
                       <ul class="">
                          <li>
-                          <i class="zmdi zmdi-arrow-left"></i>
+                          <i class="zmdi zmdi-arrow-left" onclick="dt();"></i>
                           About
                         </li> 
                       </ul>
                       <br>
                       <ul class="">
                          <li>
-                          <img id="pics" src="images/dp.png" width="20px" height="20px">
+                          <i class="zmdi zmdi-camera-bw" onclick="dt();"></i>
                           Set Profile Picture
                         </li> 
                       </ul>
                       <br>
                       <ul class="">
                          <li>
-                          <i class="zmdi zmdi-videocam"></i>
+                          <i class="zmdi zmdi-group" onclick="dt();"></i>
+                          Set Background
+                        </li> 
+                      </ul>
+                      <br>
+                      <ul class="">
+                         <li>
+                          <i class="zmdi zmdi-videocam" onclick="dt();"></i>
                           Set name
                         </li> 
                       </ul>
                       <br>
                       <ul class="">
                          <li>
-                          <i class="zmdi zmdi-phone"></i>
-                          Set background image
+                          <i class="zmdi zmdi-mic" onclick="dt();"></i>
+                          Send Message
                         </li> 
                       </ul>
                       <br>
                       <ul class="">
                          <li>
-                          <i class="zmdi zmdi-more-vert"></i>
+                          <i class="zmdi zmdi-more-vert" onclick="dt();"></i>
                           Message as second person
                         </li> 
                       </ul>
@@ -71,12 +81,13 @@
           </section>
         </div> 
       </div> 
-
 </section>
 </div>
 </section>
-
-
-  
 </body>
 </html> 
+<script type="text/javascript">
+  function dt(){
+              window.location.href="index.html";
+            }
+</script>
